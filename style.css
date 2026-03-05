@@ -1,0 +1,197 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container {
+  background: #ffffff;
+  width: 95%;
+  max-width: 450px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+h3 {
+  margin: 15px 0 10px;
+}
+
+/* =========================
+   ACCOUNT INFO
+========================= */
+.account-info {
+  background: #f1f5ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.account-info p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.account-info h3 {
+  font-size: 20px;
+}
+
+/* =========================
+   INPUT
+========================= */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+/* Deposit Button */
+button:nth-of-type(1) {
+  background: #007bff;
+  color: white;
+}
+
+/* Withdraw Button */
+button:nth-of-type(2) {
+  background: #dc3545;
+  color: white;
+}
+
+/* Toggle Dark Mode */
+button:nth-of-type(3) {
+  background: #6c757d;
+  color: white;
+}
+
+/* Logout */
+button:nth-of-type(4) {
+  background: #222;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+
+.history-section {
+  margin-top: 15px;
+}
+
+#history {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.transaction {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.transaction strong {
+  display: block;
+  margin-bottom: 3px;
+}
+
+
+.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark .container {
+  background: #1e1e1e;
+}
+
+.dark .account-info {
+  background: #2a2a2a;
+}
+
+.dark input {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+
+.dark .transaction {
+  background: #2f2f2f;
+}
+
+
+.footer {
+  margin-top: 60px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .container {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}

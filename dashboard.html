@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>My Bank Dashboard</h2>
+
+    <!-- Account Info -->
+    <div class="account-info">
+      <p><strong>Account Number:</strong> 
+        <span id="accountNumber"></span>
+      </p>
+
+      <h3>Balance: ₦<span id="balance">0</span></h3>
+    </div>
+
+    <!-- Transaction Controls -->
+    <div class="actions">
+      <input 
+        type="number" 
+        id="amount" 
+        placeholder="Enter Amount"
+      >
+
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <!-- Extra Controls -->
+    <div class="controls">
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="history-section">
+      <h3>Transaction History</h3>
+      <div id="history"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

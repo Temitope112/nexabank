@@ -5,7 +5,7 @@ A **frontend fintech dashboard prototype** simulating a digital banking interfac
 Designed as a portfolio project to showcase frontend skills, responsive design, and interactive UI components.
 
 ## Live Demo
-[View on Netlify](https://nexabank-dashboard.netlify.app)
+[View on Netlify]https://steady-banoffee-83e8a0.netlify.app/
 
 ## Features
 - Dynamic account balance display
